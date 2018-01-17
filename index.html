@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>扁平页面学习</title>
+    <style>
+        .loading{width: 100%;height:100%;position: fixed;top:0;left:0;z-index: 100;background: #ffffff;}
+        .loading .piiic{width: 50px;height:50px;position: absolute;top:0;bottom: 0;left: 0;right: 0;margin: auto;}
+        .loading .piiic i{display: block;float: left;width: 6px;height: 50px;background: #399;margin: 0 2px;transform: scaleY(0.4);animation: load 1.2s infinite;}
+        .loading .piiic i:nth-child(1){}
+        .loading .piiic i:nth-child(2){animation-delay:0.1s;}
+        .loading .piiic i:nth-child(3){animation-delay:0.2s;}
+        .loading .piiic i:nth-child(4){animation-delay:0.3s;}
+        .loading .piiic i:nth-child(5){animation-delay:0.4s;}
+
+        @keyframes load {
+            0%,40%,100%{ transform: scaleY(0.4)}
+            20%{transform: scaleY(1)}
+        }
+        </style>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script>
+            $(function () {
+                setInterval(function () {
+                    $(".loading").fadeOut();
+                },500)
+
+
+
+            })
+            </script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="loading">
+<div class="piiic">
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+</div>
+</div>
+
+          <div class="main-wrapper">
+     <header>
+         <embed src="MP3/Shewillbeloved.mp3" autostart="true" loop="true" hidden="true"></embed>
+         <nav>
+             <div class="logo"><a >1</a></div>
+             <ul>
+
+                   <li><a>2</a></li>
+                   <li><a>3</a></li>
+                   <li><a>4</a></li>
+                   <li><a>5</a></li>
+               </ul>
+         </nav>
+         <div id="banner">
+             <div class="inner">
+                   <h1>扁平化页面</h1>
+                 <p class="sub-heading">2017-12-03</p>
+                 <button onclick="window.open('index1.html')" >相册api</button>
+                 <div class="more">
+
+                 </div>
+             </div>
+         </div>
+     </header>
+     <div class="content">
+         <section class="green-section">
+             <div class="wrapper">
+                 <div><h2>AAAA</h2>
+                     <div class="hr"></div>
+                     <p class="sub-heading">ASDWRFSDCVCBCVNG</p>
+                 </div>
+                 <div class="icon-group">
+                     <span class="icon">AASDASD</span>
+                     <span class="icon">FDGFDGT</span>
+                     <span class="icon">GHGHKGH</span>
+                 </div>
+             </div>
+         </section>
+         <section class="gray-section">
+             <div class="artical-preview">
+                 <div class="image-section">
+                     <img src="images/pic01.jpg" alt="">
+                 </div>
+                 <div class="text-section">
+                     <h2>OEFBJGOXUAY</h2>
+                     <div class="sub-heading"><br>OEFBJGOXUAY<br>
+                     qasdqqwasdasd</div>
+                     <p> 你<br><br>
+                         OEFBJGOXUAYOEFBJGOXUAY<br><br>
+                         OEFBJGOXUAYOEFBJGOXUAY<br><br>
+                         OEFBJGOXUAYOEFBJGOXUAY <br><br>
+                         asdqweqasdasd
+
+                     </p>
+
+                 </div>
+             </div>
+         </section>
+         <section class="purple-section">
+             <div class="artical-preview">
+                 <!--<div class="image-section">-->
+                     <!--<img src="img/pic01.jpg" alt="">-->
+                 <!--</div>-->
+                 <div class="text-section">
+                     <h2>EQW</h2>
+                     <div class="sub-heading">ASDASD  QWEQWEQWEQ</div>
+                     <p>ASDASDAS<br><br>
+                         ZXCDGDFBGGFBF <br><br>
+                         AFUKUYJNGBFGHJGHJGH<br><br>
+                         ASDWQ<br><br>
+                         ASDAZXC<br><br>
+                         ZZXCZXCA<br>
+
+                         </p>
+                 </div>
+                 <div class="image-section">
+                     <img src="images/pic02.jpg" alt="">
+                 </div>
+             </div>
+         </section>
+         <section class="red-section">
+             <div class="artical-preview">
+                 <div class="image-section">
+                     <img src="images/pic03.jpg" alt="">
+                 </div>
+                 <div class="text-section">
+
+                         <h2>ASDQ</h2>
+                         <div class="sub-heading"> ASD ASD</div>
+                         <p>YUIYUIYI<br><br>
+                             YUIUYKGHK<br><br>
+                             GGHMNCVZSDADA<br><br>
+                             ASDWQEQWEQ <br><br>
+                             ASDQWEQWEQ<br><br>
+                             QWEQWEASDA
+
+                         </p>
+                 </div>
+             </div>
+         </section>
+         <section class="second-section">
+             <div class="wrapper">
+             <div class="heading-wrapper">
+                 <h2>QWEQWRQ</h2>
+                 <div class="hr"></div>
+                 <div class="sub-heading">
+                     QWEQWEQEQS
+                 </div>
+             </div>
+                <div class="card-group clearfix" >
+
+                    <div class="card">
+                        <h3>SDFSFS</h3>
+                        <p>
+                            1<br><br>
+                            1<br><br>
+                            1<br><br>
+                            1<br><br>
+                            1<br>
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h3>ASDQWEQFW</h3>
+                        <p>2 <br><br>
+                            2<br><br>
+                            2<br><br>
+                            2<br><br>
+                            2<br><br>
+                            2
+
+                        </p>
+                    </div>
+                    <div class="card">
+                    <h3>3</h3>
+                    <p> 3<br><br>
+                        3<br><br>
+                        3<br><br>
+                        3
+                    </p>
+                </div>
+                    <div class="card">
+                        <h3>4</h3>
+                        <p>4</br></br>
+                            4</br></br>
+                            4
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h3>5</h3>
+                        <p>5<br><br>
+                        5<br><br>
+                       5<br><br>
+                        5<br><br>
+                        5
+                        </p>
+                    </div>
+                    <div class="card"><br>
+                        <h3>6</h3>
+                        <p>6</p>
+                    </div>
+                </div>
+                </div>
+         </section>
+
+     </div>
+     <footer>
+
+         <ul class="share-group">
+
+             <li>我们分担寒潮、风雷、霹雳</li>
+             <li>我们共享雾霭、流岚、虹霓</li>
+
+         </ul>
+<div class="hr1"></div>
+         <div class="copy">
+               &copy 段金昊 - 2017.11.30
+         </div>
+     </footer>
+          </div>
+</body>
+</html>
